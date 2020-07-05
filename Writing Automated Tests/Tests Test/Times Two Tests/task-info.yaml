@@ -19,7 +19,7 @@ files:
   visible: true
   placeholders:
   - offset: 151
-    length: 65
+    length: 1
     placeholder_text: /*insert the value we assume to get from the times_two function*/
     initial_state:
       length: 65
@@ -27,17 +27,17 @@ files:
     initialized_from_dependency: false
     possible_answer: ' 4'
     selected: false
-    status: Unchecked
-  - offset: 312
-    length: 39
+    status: Solved
+  - offset: 248
+    length: 2
     placeholder_text: /*write an assert for `times_two(-4)`*/
     initial_state:
       length: 39
       offset: 312
     initialized_from_dependency: false
     possible_answer: -2
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
   text: |+
     #[cfg(test)]
     mod tests {
@@ -60,5 +60,8 @@ files:
 
 
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sun, 05 Jul 2020 06:12:40 UTC
 record: -1

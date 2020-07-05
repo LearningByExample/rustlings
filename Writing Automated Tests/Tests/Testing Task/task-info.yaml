@@ -19,7 +19,7 @@ files:
   visible: true
   placeholders:
   - offset: 122
-    length: 47
+    length: 1
     placeholder_text: /*insert the parameter for the assertion here*/
     initial_state:
       length: 47
@@ -27,17 +27,17 @@ files:
     initialized_from_dependency: false
     possible_answer: 2
     selected: false
-    status: Unchecked
-  - offset: 248
-    length: 47
+    status: Solved
+  - offset: 202
+    length: 1
     placeholder_text: /*insert the parameter for the assertion here*/
     initial_state:
       length: 47
       offset: 248
     initialized_from_dependency: false
     possible_answer: 5
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
   text: |+
     #[cfg(test)]
     mod tests {
@@ -60,5 +60,8 @@ files:
 
 
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sun, 05 Jul 2020 06:11:44 UTC
 record: -1
