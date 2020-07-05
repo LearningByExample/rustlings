@@ -12,17 +12,17 @@ files:
   visible: true
   placeholders:
   - offset: 187
-    length: 3
+    length: 21
     placeholder_text: ???
     initial_state:
       length: 3
       offset: 187
     initialized_from_dependency: false
     possible_answer: Box<error::Error>
-    selected: false
-    status: Unchecked
-  - offset: 254
-    length: 33
+    selected: true
+    status: Solved
+  - offset: 272
+    length: 1
     placeholder_text: /*something could go wrong here*/
     initial_state:
       length: 33
@@ -30,9 +30,9 @@ files:
     initialized_from_dependency: false
     possible_answer: '?'
     selected: false
-    status: Unchecked
-  - offset: 327
-    length: 33
+    status: Solved
+  - offset: 313
+    length: 1
     placeholder_text: /*something could go wrong here*/
     initial_state:
       length: 33
@@ -40,9 +40,9 @@ files:
     initialized_from_dependency: false
     possible_answer: '?'
     selected: false
-    status: Unchecked
-  - offset: 411
-    length: 33
+    status: Solved
+  - offset: 365
+    length: 1
     placeholder_text: /*something could go wrong here*/
     initial_state:
       length: 33
@@ -50,7 +50,7 @@ files:
     initialized_from_dependency: false
     possible_answer: '?'
     selected: false
-    status: Unchecked
+    status: Solved
   text: |-
     use std::error;
     use std::fmt;
@@ -155,5 +155,8 @@ files:
         assert_eq!(Err(CreationError::Zero), PositiveNonzeroInteger::new(0));
     }
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sun, 05 Jul 2020 05:35:06 UTC
 record: -1

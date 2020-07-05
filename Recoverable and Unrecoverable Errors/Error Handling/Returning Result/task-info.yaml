@@ -12,35 +12,35 @@ files:
   visible: true
   placeholders:
   - offset: 70
-    length: 14
+    length: 27
     placeholder_text: Option<String>
     initial_state:
       length: 14
       offset: 70
     initialized_from_dependency: false
     possible_answer: Result<String, &'static str>
-    selected: false
-    status: Unchecked
-  - offset: 119
-    length: 4
+    selected: true
+    status: Solved
+  - offset: 132
+    length: 2
     placeholder_text: Some
     initial_state:
       length: 4
       offset: 119
     initialized_from_dependency: false
     possible_answer: Ok
-    selected: false
-    status: Unchecked
-  - offset: 262
-    length: 4
+    selected: true
+    status: Solved
+  - offset: 273
+    length: 45
     placeholder_text: None
     initial_state:
       length: 4
       offset: 262
     initialized_from_dependency: false
     possible_answer: Err("`name` was empty; it must be nonempty.")
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
   text: |
     use std::error::Error;
 
@@ -74,5 +74,8 @@ files:
         );
     }
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sun, 05 Jul 2020 05:09:18 UTC
 record: -1

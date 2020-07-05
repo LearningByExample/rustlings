@@ -3,16 +3,16 @@ use std::fmt;
 use std::io;
 
 // PositiveNonzeroInteger is a struct defined below the tests.
-pub fn read_and_validate(b: &mut io::BufRead) -> Result<PositiveNonzeroInteger, ???> {
+pub fn read_and_validate(b: &mut io::BufRead) -> Result<PositiveNonzeroInteger, Box<dyn error::Error>> {
     let mut line = String::new();
-    b.read_line(&mut line)/*something could go wrong here*/;
-    let num: i64 = line.trim().parse()/*something could go wrong here*/;
-    let answer = PositiveNonzeroInteger::new(num)/*something could go wrong here*/;
+    b.read_line(&mut line)?;
+    let num: i64 = line.trim().parse()?;
+    let answer = PositiveNonzeroInteger::new(num)?;
     Ok(answer)
 }
 
 // This is a test helper function that turns a &str into a BufReader.
-pub fn test_with_str(s: &str) -> Result<PositiveNonzeroInteger, Box<error::Error>> {
+pub fn test_with_str(s: &str) -> Result<PositiveNonzeroInteger, Box<dyn error::Error>> {
     let mut b = io::BufReader::new(s.as_bytes());
     read_and_validate(&mut b)
 }
@@ -40,7 +40,7 @@ pub enum CreationError {
 
 impl fmt::Display for CreationError {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
-        f.write_str((self as &error::Error).description())
+        f.write_str((self as &dyn error::Error).description())
     }
 }
 

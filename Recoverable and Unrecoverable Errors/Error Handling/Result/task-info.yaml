@@ -12,7 +12,7 @@ files:
   visible: true
   placeholders:
   - offset: 290
-    length: 71
+    length: 157
     placeholder_text: /*here could be the expression to compare if the value is appropriate*/
     initial_state:
       length: 71
@@ -20,9 +20,9 @@ files:
     initialized_from_dependency: false
     possible_answer: if value > 0 {
     selected: false
-    status: Unchecked
-  - offset: 423
-    length: 51
+    status: Solved
+  - offset: 622
+    length: 56
     placeholder_text: /*here could be the othere arms of the comparison*/
     initial_state:
       length: 51
@@ -37,7 +37,7 @@ files:
                   Err(CreationError::Zero)
               }
     selected: false
-    status: Unchecked
+    status: Solved
   text: |
     use std::cmp::Ordering;
 
@@ -73,5 +73,8 @@ files:
         assert_eq!(Err(CreationError::Zero), PositiveNonzeroInteger::new(0));
     }
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sun, 05 Jul 2020 05:52:01 UTC
 record: -1

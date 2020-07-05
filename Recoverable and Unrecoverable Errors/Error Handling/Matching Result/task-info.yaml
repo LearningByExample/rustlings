@@ -11,7 +11,7 @@ files:
 - name: src/lib.rs
   visible: true
   placeholders:
-  - offset: 198
+  - offset: 160
     length: 73
     placeholder_text: /*this is the short way, but you can just match the result of
       the parse*/
@@ -21,7 +21,7 @@ files:
     initialized_from_dependency: false
     possible_answer: '?'
     selected: false
-    status: Unchecked
+    status: Solved
   text: |
     use std::num::ParseIntError;
 
@@ -51,5 +51,8 @@ files:
         );
     }
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sun, 05 Jul 2020 05:21:10 UTC
 record: -1
