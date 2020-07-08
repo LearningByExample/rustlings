@@ -15,25 +15,25 @@ files:
   visible: true
   placeholders:
   - offset: 124
-    length: 40
+    length: 17
     placeholder_text: /*it should be an Arc from the numbers*/
     initial_state:
       length: 40
       offset: 124
     initialized_from_dependency: false
     possible_answer: Arc::new(numbers)
-    selected: false
-    status: Unchecked
-  - offset: 238
-    length: 25
+    selected: true
+    status: Solved
+  - offset: 215
+    length: 43
     placeholder_text: /*declare child_numbers*/
     initial_state:
       length: 25
       offset: 238
     initialized_from_dependency: false
     possible_answer: let child_numbers = shared_numbers.clone();
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
   text: |
     use std::sync::Arc;
     use std::thread;
@@ -115,5 +115,8 @@ files:
 
 
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Wed, 08 Jul 2020 06:41:00 UTC
 record: -1

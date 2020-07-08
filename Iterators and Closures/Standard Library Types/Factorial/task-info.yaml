@@ -12,7 +12,7 @@ files:
   visible: true
   placeholders:
   - offset: 40
-    length: 29
+    length: 94
     placeholder_text: //Implement the function here
     initial_state:
       length: 29
@@ -25,8 +25,8 @@ files:
           else {
               num*factorial(num-1)
           }
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
   text: |
     pub fn factorial(num: u64) -> u64 {
         //Implement the function here
@@ -52,5 +52,8 @@ files:
         assert_eq!(24, factorial(4));
     }
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Wed, 08 Jul 2020 07:00:16 UTC
 record: -1
