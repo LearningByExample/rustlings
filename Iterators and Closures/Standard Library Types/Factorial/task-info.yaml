@@ -11,8 +11,8 @@ files:
 - name: src/lib.rs
   visible: true
   placeholders:
-  - offset: 40
-    length: 94
+  - offset: 35
+    length: 51
     placeholder_text: //Implement the function here
     initial_state:
       length: 29
@@ -55,5 +55,5 @@ files:
 status: Solved
 feedback:
   message: Congratulations!
-  time: Wed, 08 Jul 2020 07:00:16 UTC
+  time: Wed, 08 Jul 2020 07:03:13 UTC
 record: -1
