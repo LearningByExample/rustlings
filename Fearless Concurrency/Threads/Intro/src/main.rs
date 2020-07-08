@@ -1,3 +1,12 @@
+use std::thread;
+
 fn main() {
-    // put you code here to launch it
+    let v = vec![1, 2, 3];
+
+    let handle = thread::spawn(move || {
+        println!("Here's a vector: {:?}", v.clone());
+    });
+
+    handle.join().unwrap();
+
 }
