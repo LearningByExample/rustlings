@@ -12,7 +12,7 @@ files:
   visible: true
   placeholders:
   - offset: 35
-    length: 51
+    length: 24
     placeholder_text: //Implement the function here
     initial_state:
       length: 29
@@ -55,5 +55,5 @@ files:
 status: Solved
 feedback:
   message: Congratulations!
-  time: Wed, 08 Jul 2020 07:03:13 UTC
+  time: Wed, 08 Jul 2020 07:04:34 UTC
 record: -1
